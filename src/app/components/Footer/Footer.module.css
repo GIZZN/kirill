@@ -76,12 +76,29 @@
 .contactItem {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  color: #999;
+  gap: 12px;
+  margin-bottom: 15px;
+  color: #ffffff;
 }
 
-.contactItem img {
-  opacity: 0.7;
+.contactItem span {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.icon {
+  min-width: 20px;
+  min-height: 20px;
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.contactItem:hover .icon,
+.contactItem:hover span {
+  opacity: 1;
 }
 
 .footerBottom {
@@ -113,7 +130,6 @@
   color: #fff;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .footerContent {
     grid-template-columns: repeat(2, 1fr);
