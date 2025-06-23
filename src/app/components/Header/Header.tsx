@@ -157,10 +157,10 @@ export default function Header() {
 
         <div className={styles.leftSection}>
           <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileNavVisible : ''}`}>
-            <Link href="/women" className={styles.navLink}>Женщинам</Link>
-            <Link href="/men" className={styles.navLink}>Мужчинам</Link>
-            <Link href="/new" className={styles.navLink}>Новинки</Link>
-            <Link href="/shop" className={styles.navLink}>Sale</Link>
+            <Link href="/women" className={styles.navLink}>WOMEN</Link>
+            <Link href="/men" className={styles.navLink}>MEN</Link>
+            <Link href="/new" className={styles.navLink}>NEW</Link>
+            <Link href="/shop" className={styles.navLink}>SALE</Link>
           </nav>
         </div>
 
