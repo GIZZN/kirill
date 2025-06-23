@@ -43,6 +43,12 @@
   border-radius: 15px; 
 }
 
+.heroSideImage .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .heroSideImage:hover {
   opacity: 1;
   transform: scale(1.02);
@@ -75,6 +81,12 @@
   height: 100%;
   overflow: hidden;
   border-radius: 15px; 
+}
+
+.heroMainImage .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .heroMainImage::after {
@@ -298,12 +310,23 @@
 
 .categoryCard {
   position: relative;
-  height: 500px;
-  border-radius: 20px;
+  width: 100%;
+  height: 400px;
   overflow: hidden;
+  border-radius: 15px;
   cursor: pointer;
-  transition: all 0.5s ease;
-  background: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.categoryCard .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.categoryCard:hover .image {
+  transform: scale(1.05);
 }
 
 .categoryCard::before {

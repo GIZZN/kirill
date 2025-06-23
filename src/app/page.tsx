@@ -21,22 +21,22 @@ export default function Home() {
               <Image
                 src={side1Image}
                 alt="Fashion Collection"
-                fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                width={400}
+                height={600}
                 priority
                 quality={85}
-                style={{ objectFit: "cover" }}
+                className={styles.image}
               />
             </div>
             <div className={styles.heroSideImage}>
               <Image
                 src={side2Image}
                 alt="Fashion Collection"
-                fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                width={400}
+                height={600}
                 priority
                 quality={85}
-                style={{ objectFit: "cover" }}
+                className={styles.image}
               />
             </div>
           </div>
@@ -45,11 +45,11 @@ export default function Home() {
             <Image
               src={mainImage}
               alt="Fashion Collection"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
+              width={800}
+              height={1200}
               priority
               quality={90}
-              style={{ objectFit: "cover" }}
+              className={styles.image}
             />
             <div className={styles.heroContent}>
               <h1 className={styles.heroTitle}>SHARKTECH PREMIER 2024</h1>
@@ -62,22 +62,22 @@ export default function Home() {
               <Image
                 src={side3Image}
                 alt="Fashion Collection"
-                fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                width={400}
+                height={600}
                 priority
                 quality={85}
-                style={{ objectFit: "cover" }}
+                className={styles.image}
               />
             </div>
             <div className={styles.heroSideImage}>
               <Image
                 src={side4Image}
                 alt="Fashion Collection"
-                fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                width={400}
+                height={600}
                 priority
                 quality={85}
-                style={{ objectFit: "cover" }}
+                className={styles.image}
               />
             </div>
           </div>
@@ -90,10 +90,10 @@ export default function Home() {
               <Image
                 src={popular1Image}
                 alt="Women's Collection"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                width={600}
+                height={800}
                 quality={85}
-                style={{ objectFit: "cover" }}
+                className={styles.image}
               />
               <h3 className={styles.categoryTitle}>WOMEN</h3>
             </div>
@@ -101,10 +101,10 @@ export default function Home() {
               <Image
                 src={popular2Image}
                 alt="Men's Collection"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                width={600}
+                height={800}
                 quality={85}
-                style={{ objectFit: "cover" }}
+                className={styles.image}
               />
               <h3 className={styles.categoryTitle}>MEN</h3>
             </div>
@@ -112,10 +112,10 @@ export default function Home() {
               <Image
                 src={popular3Image}
                 alt="Accessories Collection"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                width={600}
+                height={800}
                 quality={85}
-                style={{ objectFit: "cover" }}
+                className={styles.image}
               />
               <h3 className={styles.categoryTitle}>ACCESSORIES</h3>
             </div>
