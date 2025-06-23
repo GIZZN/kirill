@@ -2,15 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
-import mainImage from "../../public/images/main.jpg";
-import side1Image from "../../public/images/side-1.jpg";
-import side2Image from "../../public/images/side-2.jpg";
-import side3Image from "../../public/images/side-3.jpg";
-import side4Image from "../../public/images/side-4.jpg";
-import popular1Image from "../../public/images/popular/1.png";
-import popular2Image from "../../public/images/popular/2.png";
-import popular3Image from "../../public/images/popular/3.png";
-
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -19,7 +10,7 @@ export default function Home() {
           <div className={styles.heroSideContainer}>
             <div className={styles.heroSideImage}>
               <Image
-                src={side1Image}
+                src="/images/side-1.jpg"
                 alt="Fashion Collection"
                 width={400}
                 height={600}
@@ -30,7 +21,7 @@ export default function Home() {
             </div>
             <div className={styles.heroSideImage}>
               <Image
-                src={side2Image}
+                src="/images/side-2.jpg"
                 alt="Fashion Collection"
                 width={400}
                 height={600}
@@ -43,7 +34,7 @@ export default function Home() {
 
           <div className={styles.heroMainImage}>
             <Image
-              src={mainImage}
+              src="/images/main.jpg"
               alt="Fashion Collection"
               width={800}
               height={1200}
@@ -60,7 +51,7 @@ export default function Home() {
           <div className={styles.heroSideContainer}>
             <div className={styles.heroSideImage}>
               <Image
-                src={side3Image}
+                src="/images/side-3.jpg"
                 alt="Fashion Collection"
                 width={400}
                 height={600}
@@ -71,7 +62,7 @@ export default function Home() {
             </div>
             <div className={styles.heroSideImage}>
               <Image
-                src={side4Image}
+                src="/images/side-4.jpg"
                 alt="Fashion Collection"
                 width={400}
                 height={600}
@@ -88,7 +79,7 @@ export default function Home() {
           <div className={styles.categories}>
             <div className={styles.categoryCard}>
               <Image
-                src={popular1Image}
+                src="/images/popular/1.png"
                 alt="Women's Collection"
                 width={600}
                 height={800}
@@ -99,7 +90,7 @@ export default function Home() {
             </div>
             <div className={styles.categoryCard}>
               <Image
-                src={popular2Image}
+                src="/images/popular/2.png"
                 alt="Men's Collection"
                 width={600}
                 height={800}
@@ -110,7 +101,7 @@ export default function Home() {
             </div>
             <div className={styles.categoryCard}>
               <Image
-                src={popular3Image}
+                src="/images/popular/3.png"
                 alt="Accessories Collection"
                 width={600}
                 height={800}
