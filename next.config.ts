@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    disableStaticImages: false,
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
@@ -12,8 +11,8 @@ const nextConfig: NextConfig = {
         hostname: '**',
       },
     ],
-    domains: ['localhost'],
-    unoptimized: true,
+    formats: ['image/webp'],
+    minimumCacheTTL: 60,
   },
   webpack: (config) => {
     config.module.rules.push({
